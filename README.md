@@ -1,31 +1,52 @@
-📌 **Exercise Statement**
+## 📌 Exercise Statement
 
-This module covers three core Java features aimed at writing clearer, safer, and more modern code: enums for controlled finite values, the Java Time API for date and time handling, and records for defining immutable data classes with minimal boilerplate.
+This module focuses on **Java enums**, a feature that allows defining a fixed set of meaningful constants. Each exercise has been completed and documented following the **Conventional Commits** standard.
 
-**Level 1 — Enums**
+- Enums improve code **readability, safety, and maintainability**.
+- They can include **methods and logic**, and are safer than using strings or integers for fixed sets of values.
 
-Enums are used to define a fixed set of constant values with semantic meaning. They improve type safety compared to primitive types or strings and can encapsulate behavior through methods.
+---
 
-This level focuses on enum creation, usage in control flow and classes, and extracting behavior from enum values.
+### Level 1 — Exercise 1: Days of the Week
 
-**Level 1 — Exercises**
+- Created an enum `Day` with all days of the week.
+- Implemented a method that receives a `Day` and prints whether it is a **workday** or **weekend**.
+- Demonstrates how enums can be used in **conditions and classes** to control behavior.
 
-An enum named `Day` is created containing the days of the week. A function receives a `Day` value and prints whether it represents a weekday or a weekend.
+---
 
-An enum named `Level` is created with the values `LOW`, `MEDIUM`, and `HIGH`. A `Task` class includes a `Level` property, and behavior changes depending on the assigned level.
+### Level 1 — Exercise 2: Task Levels
 
-Methods are added to the enum to demonstrate that enums can contain logic, such as returning a color based on the level.
+- Created an enum `Level` with values `LOW`, `MEDIUM`, and `HIGH`.
+- Implemented a `Task` class with a `Level` property.
+- Behavior of the `Task` class changes depending on the assigned **level**.
 
-A `String` value is converted to an enum using `valueOf`, and invalid values are handled appropriately.
+---
 
-<br>
+### Level 1 — Exercise 3: Enums with Methods and String Conversion
 
-✨ **Features**
+- Added methods inside enums, such as `getColor()`, to demonstrate that enums **can contain logic**.
+- Converted strings to enum values using `valueOf()`, including **error handling** for invalid input.
 
-Use of enums for controlled values, behavior encapsulation within enums, enum-based control flow, safe conversion from strings, and error handling for invalid enum values.
+---
 
-<br>
+## ✨ Features
 
-🛠 **Technologies**
+- Defining and using **enums** for fixed sets of values
+- Adding **methods and logic** inside enums
+- Using enums in **classes and conditional logic**
+- Converting **strings to enums** safely with error handling
 
-Backend: Java 25
+---
+
+## 🛠 Technologies
+
+- **Backend**: Java 21 (LTS)
+
+---
+
+## 🚀 Installation & Execution
+
+1. Clone the repository by running `git clone <repository-url>` and navigate to the project folder.
+2. Compile all Java source files using `javac -d out src/**/*.java`. This will create `.class` files in the `out` directory.
+3. Run the program with `java -cp out Main`. This executes the main program demonstrating the enums exercises.
